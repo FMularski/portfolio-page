@@ -82,3 +82,26 @@ section#header-section {
         transform: scale(1);
     }
 }
+
+section#about-me-section {
+    height: 100vh;
+
+    div#about {
+        transition: all 0.5s ease;
+        // animation: fade-in 1.5s ease;
+        // animation-delay: 2s;
+        height: 75%;
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: rgba(0, 0, 0, .4) 1rem 1rem;
+        // border-radius: 7rem;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
