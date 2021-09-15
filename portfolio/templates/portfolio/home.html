@@ -13,10 +13,30 @@
         <div id="line" class="flex-center">
             <p>Filip Mularski's <br> portfolio page</p>
         </div>
+
+        <a id="arrow-to-about" href="#about-me-section"><i class="fas fa-arrow-circle-down"></i></a>
     </section>
 
-    <section style="height: 100vh;">
+    <section id="about-me-section" style="height: 100vh;">
 
     </section>
 {% endblock %}
 {% block footer %}{% endblock %}
+
+{% block script %}
+    <script>
+        (function(){
+            const line = document.querySelector('#line');
+            const arrowToAbout = document.querySelector('#arrow-to-about');
+
+            line.addEventListener('animationend', function(){
+                arrowToAbout.style.opacity = 1;
+            });
+
+            arrowToAbout.addEventListener('click', function(){
+                this.remove();
+            });
+
+        })();
+    </script>
+{% endblock %}

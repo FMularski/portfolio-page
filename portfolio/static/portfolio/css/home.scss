@@ -4,6 +4,7 @@ section#header-section {
     background: linear-gradient(black, transparent, black),
     url('/static/portfolio/img/planks.png');
     height: 100vh;
+    position: relative;
 
     p {
         color: white;
@@ -25,6 +26,22 @@ section#header-section {
 
         width: 90%;
         height: 12rem;
+    }
+
+    a {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        color: white;
+        opacity: 0;
+        transition: all 1s ease;
+
+        i {
+            transition: all 0.3s ease;
+            animation: pulse 1s ease infinite;
+        }
     }
 }
 
@@ -51,5 +68,17 @@ section#header-section {
     100% {
         width: 90%;
         height: 12rem;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
     }
 }

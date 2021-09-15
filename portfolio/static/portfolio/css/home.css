@@ -3,6 +3,7 @@ section#header-section {
   background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(transparent), to(black)), url("/static/portfolio/img/planks.png");
   background: linear-gradient(black, transparent, black), url("/static/portfolio/img/planks.png");
   height: 100vh;
+  position: relative;
 }
 
 section#header-section p {
@@ -24,6 +25,26 @@ section#header-section div#line {
           animation: extending-line 3s ease;
   width: 90%;
   height: 12rem;
+}
+
+section#header-section a {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+section#header-section a i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-animation: pulse 1s ease infinite;
+          animation: pulse 1s ease infinite;
 }
 
 @-webkit-keyframes extending-line {
@@ -75,6 +96,36 @@ section#header-section div#line {
   100% {
     width: 90%;
     height: 12rem;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=home.css.map */
