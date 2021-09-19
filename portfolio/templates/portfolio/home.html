@@ -14,7 +14,7 @@
             <p>Filip Mularski's <br> portfolio page</p>
         </div>
 
-        <a id="arrow-to-about" href="#about-me-section"><i class="fas fa-arrow-circle-down"></i></a>
+        <i id="arrow-to-about" class="fas fa-arrow-circle-down"></i>
     </section>
 
     <section id="about-me-section" class="flex-center">
@@ -26,19 +26,6 @@
 {% block footer %}{% endblock %}
 
 {% block script %}
-    <script>
-        (function(){
-            const line = document.querySelector('#line');
-            const arrowToAbout = document.querySelector('#arrow-to-about');
-
-            line.addEventListener('animationend', function(){
-                arrowToAbout.style.opacity = 1;
-            });
-
-            arrowToAbout.addEventListener('click', function(){
-                this.remove();
-            });
-
-        })();
-    </script>
+    <script src="{% static '/portfolio/js/anchors.js' %}"></script>
+    <script src="{% static '/portfolio/js/animationsOnEntryHandler.js' %}"></script>
 {% endblock %}
