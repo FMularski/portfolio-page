@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 section#header-section {
   background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(transparent), to(black)), url("/static/portfolio/img/planks.png");
   background: linear-gradient(black, transparent, black), url("/static/portfolio/img/planks.png");
@@ -46,6 +47,69 @@ section#header-section i {
 
 section#header-section i:hover {
   cursor: pointer;
+}
+
+section#about-me-section {
+  height: 100vh;
+}
+
+section#about-me-section div#about {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: auto;
+  width: 80rem;
+  background: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 1rem 1rem 0.5rem;
+          box-shadow: rgba(0, 0, 0, 0.7) 1rem 1rem 0.5rem;
+  opacity: 0;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#about-me-section div#about div#about-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#about-me-section div#about div#about-left img#hey-its-me {
+  width: 20rem;
+}
+
+section#about-me-section div#about div#about-left img#me {
+  width: 20rem;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 1rem 1rem 0.5rem;
+          box-shadow: rgba(0, 0, 0, 0.7) 1rem 1rem 0.5rem;
+}
+
+section#about-me-section div#about div#about-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: justify;
+  padding: 3rem;
+  min-width: 30rem;
 }
 
 @-webkit-keyframes extending-line {
@@ -128,20 +192,5 @@ section#header-section i:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-}
-
-section#about-me-section {
-  height: 100vh;
-}
-
-section#about-me-section div#about {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  height: 75%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 1rem 1rem;
-          box-shadow: rgba(0, 0, 0, 0.4) 1rem 1rem;
-  opacity: 0;
 }
 /*# sourceMappingURL=home.css.map */

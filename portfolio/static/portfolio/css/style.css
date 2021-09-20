@@ -24,4 +24,34 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
