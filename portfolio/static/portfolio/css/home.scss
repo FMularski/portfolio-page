@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 section#header-section {
     background: linear-gradient(black, transparent, black),
@@ -91,6 +93,98 @@ section#about-me-section {
     }
 }
 
+
+
+section#tech-stack-section {
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+    position: relative;
+
+    h2 {
+        padding: 3% 5vw 3% 5vw;
+        margin: 0;
+        font-size: 3rem;
+        color: white;
+        font-family: 'Play', sans-serif;
+    }
+
+    table {
+        margin-left: 5vw;
+
+        div.tech {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            img {
+                transition: all 0.8s ease;
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, .5) .4rem .4rem;
+                opacity: 1;
+            }
+
+            span.tech-desc {
+                color: white;
+                margin: .5rem;
+                font-style: italic;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    span.animated-code {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1.2rem;
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        animation: animated-code 2s linear infinite;
+        opacity: 0;
+        text-shadow: black 2px 2px;
+    }
+
+    span.animated-code-1 {
+        bottom: 8rem;
+        right: 12rem;
+        animation-delay: 1s;
+    }
+    span.animated-code-2 {
+        bottom: 11rem;
+        right: 9rem;
+        animation-delay: 2s;
+    }
+    span.animated-code-3 {
+        bottom: 14rem;
+        right: 20rem;
+        animation-delay: 3s;
+    }
+    span.animated-code-4 {
+        bottom: 17rem;
+        right: 19rem;
+        animation-delay: 4s;
+    }
+    span.animated-code-5 {
+        bottom: 20rem;
+        right: 9rem;
+        animation-delay: 5s;
+    }
+
+    img#programming {
+        position: absolute;
+        bottom: 0;
+        right: 5vw;
+        width: 35rem;
+    }
+    
+}
+
 @keyframes extending-line {
     0% {
         z-index: 1000;
@@ -126,5 +220,43 @@ section#about-me-section {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes animated-code {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(3%) translateY(-10vh);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(3%) translateY(-20vh);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(0) translateY(-30vh);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(0) translateY(-40vh);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0) translateY(-50vh);
     }
 }

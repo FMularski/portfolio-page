@@ -13,4 +13,13 @@
 
         this.remove();
     });
+
+    const toTechStackAnchors = document.querySelectorAll('.to-tech-stack');
+    toTechStackAnchors.forEach(function(anchor) {
+        anchor.addEventListener('click', function(){
+            $('html,body').animate({
+                scrollTop: $("#tech-stack-section").offset().top
+            }, 'fast');
+        })
+    })
 })();

@@ -41,9 +41,82 @@
                     I am looking forward to gaining my first commercial experience in a real-life job as a <b>backend/fullstack</b> developer.
                     I really hope you will like this website, as well as some of my projects attached below. 
                 </p>
+                <hr>
+                <p>
+                    <button class="btn btn-dark to-tech-stack">Tech Stack</button>
+                    <button class="btn btn-dark">Projects</button>
+                </p>
                 
             </div>
         </div>
+    </section>
+    <section id="tech-stack-section">
+        <h2><i class="fas fa-laptop-code"></i> My tech stack</h2>
+        <table>
+            <tr>
+                <td></td>
+                <td>
+                    <div class="tech">
+                        <img id="python-img" src="{% static '/portfolio/img/python.png' %}" alt="">
+                        <span class="tech-desc">just my favourite!</span>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="tech">
+                        <img id="django-img" src="{% static '/portfolio/img/django.png' %}" alt="">
+                        <span class="tech-desc">still learning its power</span>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="tech">
+                        <img id="html-img" src="{% static '/portfolio/img/html5.png' %}" alt="">
+                        <span class="tech-desc">good ol' markup</span>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="tech">
+                        <img id="sass-img" src="{% static '/portfolio/img/sass.png' %}" alt="">
+                        <span class="tech-desc">prefer it to vanilla CSS</span>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="tech">
+                        <img id="js-img" src="{% static '/portfolio/img/js.png' %}" alt="">
+                        <span class="tech-desc">love to do fancy stuff with it!</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div class="tech">
+                        <img id="psql-img" src="{% static '/portfolio/img/psql.png' %}" alt="">
+                        <span class="tech-desc">the db I usually work with</span>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="tech">
+                        <img id="git-img" src="{% static '/portfolio/img/git.png' %}" alt="">
+                        <span class="tech-desc">to control my work</span>
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        <img id="programming" src="{% static '/portfolio/img/programming.svg' %}" alt="">
+        <span class="animated-code animated-code-1">print('Hello world')</span>
+        <span class="animated-code animated-code-2">for x in mylist: print(x)</span>
+        <span class="animated-code animated-code-3">fun = lambda x: x % 2</span>
+        <span class="animated-code animated-code-4">v1, v2 = v2, v1</span>
+        <span class="animated-code animated-code-5">py manage.py migrate</span>
+        
     </section>
 {% endblock %}
 {% block footer %}{% endblock %}

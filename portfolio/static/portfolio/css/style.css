@@ -54,4 +54,10 @@ body {
     font-size: 50%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
