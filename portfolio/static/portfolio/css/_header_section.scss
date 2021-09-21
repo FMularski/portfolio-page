@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+section#header-section {
+    background: linear-gradient(black, transparent, black),
+    url('/static/portfolio/img/planks.png');
+    height: 100vh;
+    position: relative;
+
+    p {
+        color: white;
+        font-size: 3rem;
+        font-family: 'Special Elite', cursive;
+        text-align: center;
+        margin: 0;
+    }
+
+    div#line {
+        overflow: hidden;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+
+        position: absolute;
+
+        transition: all 0.3s ease;
+        animation: extending-line 3s ease;
+
+        width: 90%;
+        height: 12rem;
+    }
+    
+    i {
+        position: absolute;
+        bottom: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        color: white;
+        opacity: 0;
+        transition: all 1s ease;
+        transition: all 0.3s ease;
+        animation: pulse 1s ease infinite;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+}
+
+@keyframes extending-line {
+    0% {
+        z-index: 1000;
+        border-radius: 100%;
+        width: 200vw;
+        height: 200vw;
+        background: white;
+    }
+    35% {
+        width: 0;
+        height: 0;
+        border-radius: 100%;
+        background: white;
+    }
+    55% {
+        width: 90%;
+        height: 0;
+        border-radius: 0%;
+        background: transparent;
+    }
+    100% {
+        width: 90%;
+        height: 12rem;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
