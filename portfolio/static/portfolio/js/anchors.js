@@ -21,5 +21,14 @@
                 scrollTop: $("#tech-stack-section").offset().top
             }, 'fast');
         })
-    })
+    });
+
+    const toProjectsAnchors = document.querySelectorAll('.to-projects');
+    toProjectsAnchors.forEach(function(anchor) {
+        anchor.addEventListener('click', function(){
+            $('html,body').animate({
+                scrollTop: $("#projects-section").offset().top
+            }, 'fast');
+        })
+    });
 })();

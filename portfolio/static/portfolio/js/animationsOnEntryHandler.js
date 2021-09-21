@@ -30,7 +30,6 @@
     aboutSectionObserver.observe(aboutSection);
 
 
-
     function setObserver(img) {
         function observerImgCallback(entries, observer) {
             entries.forEach(entry => {
@@ -46,5 +45,35 @@
     techImages.forEach(img => {
         setObserver(img);
     });
+
+
+    const fadingInElements = [
+        document.querySelector('#tech-stack-header'),
+        document.querySelector('#projects-header'),
+        document.querySelector('#projects-header-2'),
+    ];
+
+    const projects = document.querySelectorAll('.project');
+
+    projects.forEach(project => fadingInElements.push(project));
+
+    function setFadingObserver(el) {
+        function observerFadingInElementCallback(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    el.classList.remove('hidden');
+                    el.classList.remove('hidden-right');
+                }
+            });
+        }
+        let observer = new IntersectionObserver(observerFadingInElementCallback, options);
+        observer.observe(el);
+    }
+
+    fadingInElements.forEach(el => {
+        setFadingObserver(el);
+    })
+
+
 
 })();

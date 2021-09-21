@@ -44,14 +44,14 @@
                 <hr>
                 <p>
                     <button class="btn btn-dark to-tech-stack">Tech Stack</button>
-                    <button class="btn btn-dark">Projects</button>
+                    <button class="btn btn-dark to-projects">Projects</button>
                 </p>
                 
             </div>
         </div>
     </section>
     <section id="tech-stack-section">
-        <h2><i class="fas fa-laptop-code"></i> My tech stack</h2>
+        <h2 id="tech-stack-header" class="hidden"><i class="fas fa-laptop-code"></i> My tech stack</h2>
         <table>
             <tr>
                 <td></td>
@@ -119,7 +119,109 @@
         
     </section>
     <section id="projects-section">
-        
+        <h2 id="projects-header" class="hidden"><i class="fas fa-puzzle-piece"></i> My <img src="{% static '/portfolio/img/django.svg' %}" alt=""> projects</h2>
+        <div id="projects">
+            <div class="project hidden">
+                <h3 class="project-title">Real-time chat app</h3>
+                <hr>
+                <div class="project-content">
+                    <img src="{% static '/portfolio/img/chat-app.png' %}" alt="" class="project-img">
+                    <div class="project-desc">
+                        <p>
+                            'Chat App' is very self-explanatory. The project is a django web application allowing users to chat with themselves in created rooms. 
+                        </p>
+                        <p>
+                            <b>Core features:</b> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> User management system - registering, logging, resetting passwords </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> Friends system - searching, inviting, filtering, removing </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> Creating rooms and real-time chatting based on Ajax requests </span> <br>
+                        </p>
+                        <p>
+                            <b>Created with:</b> <br>
+                            Django, AWS RDS PostgreSQL, AWS S3 Bucket, Sass, jQuery, Ajax
+                        </p>
+                        <p>
+                            <a href="https://github.com/FMularski/django-chat-app" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://ch4t-4pp.herokuapp.com/" target="_blank" class="btn btn-dark"><i class="fas fa-rocket"></i> Open App</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project hidden-right">
+                <h3 class="project-title">Image House</h3>
+                <hr>
+                <div class="project-content">
+                    <img src="{% static '/portfolio/img/image-house.png' %}" alt="" class="project-img">
+                    <div class="project-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project hidden">
+                <h3 class="project-title">Password Keeper</h3>
+                <hr>
+                <div class="project-content">
+                    <img src="{% static '/portfolio/img/password-keeper.png' %}" alt="" class="project-img">
+                    <div class="project-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project hidden-right">
+                <h3 class="project-title">Week Manager</h3>
+                <hr>
+                <div class="project-content">
+                    <img src="{% static '/portfolio/img/week-manager.png' %}" alt="" class="project-img">
+                    <div class="project-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="projects-header-2" class="hidden"><i class="fas fa-puzzle-piece"></i> Other python projects</h2>
+        <div id="projects-2">
+            <div class="project hidden">
+                <h3 class="project-title">Chatter</h3>
+                <hr>
+                <div class="project-content">
+                    <img src="{% static '/portfolio/img/chatter.png' %}" alt="" class="project-img">
+                    <div class="project-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                    </div>
+                </div>
+            </div>       
+            
+            <div class="project hidden">
+                <h3 class="project-title">Password Manager</h3>
+                <hr>
+                <div class="project-content">
+                    <img src="{% static '/portfolio/img/password-manager.png' %}" alt="" class="project-img">
+                    <div class="project-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="project hidden">
+                <h3 class="project-title">Cloudo</h3>
+                <hr>
+                <div class="project-content">
+                    <img src="{% static '/portfolio/img/cloudo.png' %}" alt="" class="project-img">
+                    <div class="project-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                    </div>
+                </div>
+            </div>   
+        </div>
     </section>
 {% endblock %}
 {% block footer %}{% endblock %}

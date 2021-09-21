@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 section#header-section {
   background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(transparent), to(black)), url("/static/portfolio/img/planks.png");
   background: linear-gradient(black, transparent, black), url("/static/portfolio/img/planks.png");
@@ -211,6 +212,14 @@ section#tech-stack-section h2 {
   font-size: 3rem;
   color: white;
   font-family: 'Play', sans-serif;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section#tech-stack-section h2.hidden {
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  opacity: 0;
 }
 
 section#tech-stack-section table {
@@ -394,5 +403,94 @@ section#tech-stack-section img#programming {
     -webkit-transform: translateX(0) translateY(-50vh);
             transform: translateX(0) translateY(-50vh);
   }
+}
+
+section#projects-section {
+  min-height: 100vh;
+  background: url("/static/portfolio/img/puzzle.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section#projects-section h2 {
+  font-family: 'Comfortaa', cursive;
+  padding: 3% 5vw 3% 5vw;
+  color: white;
+  text-shadow: black 2px 2px 1px;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section#projects-section h2 img {
+  height: 3rem;
+}
+
+section#projects-section h2.hidden {
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  opacity: 0;
+}
+
+section#projects-section div#projects, section#projects-section div#projects-2 {
+  font-family: 'Comfortaa', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#projects-section div#projects div.project, section#projects-section div#projects-2 div.project {
+  width: 40rem;
+  margin-bottom: 2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section#projects-section div#projects div.project.hidden, section#projects-section div#projects-2 div.project.hidden {
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  opacity: 0;
+}
+
+section#projects-section div#projects div.project.hidden-right, section#projects-section div#projects-2 div.project.hidden-right {
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+  opacity: 0;
+}
+
+section#projects-section div#projects div.project h3.project-title, section#projects-section div#projects-2 div.project h3.project-title {
+  color: white;
+  text-shadow: black 2px 2px 1px;
+}
+
+section#projects-section div#projects div.project div.project-content, section#projects-section div#projects-2 div.project div.project-content {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 1rem 1rem 0.6rem;
+          box-shadow: rgba(0, 0, 0, 0.6) 1rem 1rem 0.6rem;
+  border-radius: 3rem;
+}
+
+section#projects-section div#projects div.project div.project-content img, section#projects-section div#projects-2 div.project div.project-content img {
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+section#projects-section div#projects div.project div.project-content div.project-desc, section#projects-section div#projects-2 div.project div.project-content div.project-desc {
+  background: white;
+  padding: 2rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
 }
 /*# sourceMappingURL=home.css.map */

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+section#projects-section {
+    min-height: 100vh;
+    background: url('/static/portfolio/img/puzzle.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    object-fit: cover;
+
+    h2 {
+        font-family: 'Comfortaa', cursive;
+        padding: 3% 5vw 3% 5vw;
+        color: white;
+        text-shadow: black 2px 2px 1px;
+        font-size: 3rem;
+        text-align: center;
+        transition: all 0.5s ease;
+
+        img {
+            height: 3rem;
+        }
+
+        &.hidden {
+            transform: translateX(-40%);
+            opacity: 0;
+        }
+    }
+
+    div#projects, div#projects-2 {
+        font-family: 'Comfortaa', cursive;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        div.project {
+            width: 40rem;
+            margin-bottom: 2rem;
+            transition: all 0.5s ease;
+
+            &.hidden {
+                transform: translateX(-40%);
+                opacity: 0;
+            }
+
+            &.hidden-right {
+                transform: translateX(40%);
+                opacity: 0;
+            }
+            
+            h3.project-title {
+                color: white;
+                text-shadow: black 2px 2px 1px;
+            }
+            
+            div.project-content {
+                box-shadow: rgba(0, 0, 0, .6) 1rem 1rem .6rem;
+                border-radius: 3rem;
+                img {
+                    width: 100%;
+                    border-top-left-radius: 3rem;
+                    border-top-right-radius: 3rem;
+                }
+
+                div.project-desc {
+                    background: white;
+                    padding: 2rem;
+                    border-bottom-left-radius: 3rem;
+                    border-bottom-right-radius: 3rem;
+                }
+            }
+        }
+    }
+}
