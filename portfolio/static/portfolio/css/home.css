@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap");
 section#header-section {
   background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(transparent), to(black)), url("/static/portfolio/img/planks.png");
   background: linear-gradient(black, transparent, black), url("/static/portfolio/img/planks.png");
@@ -493,5 +495,164 @@ section#projects-section div#projects div.project div.project-content div.projec
   padding: 2rem;
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
+}
+
+section#contact-section {
+  height: 100vh;
+  background: url("/static/portfolio/img/desk.png");
+  background-size: cover;
+  background-attachment: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+section#contact-section a#download-resume {
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+section#contact-section a#download-resume div {
+  width: 18rem;
+  height: 18rem;
+  background: #ff0055;
+  border-radius: 50%;
+  -webkit-box-shadow: #bb003e 0.5rem 0.5rem 0.25rem;
+          box-shadow: #bb003e 0.5rem 0.5rem 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+section#contact-section a#download-resume div.hidden {
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section#contact-section a#download-resume div span {
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+section#contact-section a#download-resume div i {
+  padding: 1rem;
+  font-size: 4rem;
+  color: white;
+}
+
+section#contact-section a#download-resume div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section#contact-section form {
+  width: 35rem;
+  font-family: 'Stick No Bills', sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section#contact-section form.hidden {
+  opacity: 0;
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+}
+
+section#contact-section form h2 {
+  font-size: 3rem;
+}
+
+section#contact-section form input, section#contact-section form textarea {
+  margin-bottom: 1rem;
+}
+
+section#contact-section form input:focus, section#contact-section form textarea:focus {
+  border-color: #bb003e;
+  -webkit-box-shadow: #bb003e 0.25rem 0.25rem 0.25rem;
+          box-shadow: #bb003e 0.25rem 0.25rem 0.25rem;
+}
+
+section#contact-section form button {
+  display: block;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #ff0055;
+  -webkit-box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
+          box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section#contact-section form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section#contact-section div#social-media {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+}
+
+section#contact-section div#social-media a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+}
+
+section#contact-section div#social-media a i {
+  padding: 1.2rem;
+  background: #ff0055;
+  border-radius: 50%;
+  -webkit-box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
+          box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+section#contact-section div#social-media a i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=home.css.map */

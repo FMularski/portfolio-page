@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
+
+section#contact-section {
+    height: 100vh;
+    background: url('/static/portfolio/img/desk.png');
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    a#download-resume {
+        text-decoration: none;
+        border-radius: 50%;
+
+        div {
+            width: 18rem;
+            height: 18rem;
+            background: rgb(255, 0, 85);
+            border-radius: 50%;
+            box-shadow: rgb(187, 0, 62) .5rem .5rem .25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease;
+            transform-origin: center;
+
+            &.hidden {
+                opacity: 0;
+                transform: translateX(-50%);
+            }
+
+            span {
+                font-family: 'Stick No Bills', sans-serif;
+                font-size: 2rem;
+                color: white;
+            }
+
+            i {
+                padding: 1rem;
+                font-size: 4rem;
+                color: white;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    form {
+        width: 35rem;
+        font-family: 'Stick No Bills', sans-serif;
+        transition: all 0.3s ease;
+
+        &.hidden {
+            opacity: 0;
+            transform: translateX(40%);
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        input, textarea {
+            margin-bottom: 1rem;
+        }
+
+        input:focus, textarea:focus {
+            border-color: rgb(187, 0, 62);
+            box-shadow: rgb(187, 0, 62) 0.25rem 0.25rem 0.25rem; 
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background: rgb(255, 0, 85);
+            box-shadow: rgb(187, 0, 62) .25rem .25rem .12rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    div#social-media {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 10rem;
+
+        a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: white;
+
+            i {
+                padding: 1.2rem;
+                background: rgb(255, 0, 85);
+                border-radius: 50%;
+                box-shadow: rgb(187, 0, 62) .25rem .25rem .12rem;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

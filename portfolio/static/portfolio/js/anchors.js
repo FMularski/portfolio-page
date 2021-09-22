@@ -31,4 +31,15 @@
             }, 'fast');
         })
     });
+
+    const toContactAnchors = document.querySelectorAll('.to-contact');
+    toContactAnchors.forEach(function(anchor) {
+        anchor.addEventListener('click', function(){
+            $('html,body').animate({
+                scrollTop: $("#contact-section").offset().top
+            }, 'fast');
+        })
+    });
+
+
 })();

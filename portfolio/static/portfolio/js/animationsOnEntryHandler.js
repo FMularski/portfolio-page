@@ -51,6 +51,8 @@
         document.querySelector('#tech-stack-header'),
         document.querySelector('#projects-header'),
         document.querySelector('#projects-header-2'),
+        document.querySelector('#download-resume div'),
+        document.querySelector('#contact-form')
     ];
 
     const projects = document.querySelectorAll('.project');
