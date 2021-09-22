@@ -6,8 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap");
 section#header-section {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(transparent), to(black)), url("/static/portfolio/img/planks.png");
-  background: linear-gradient(black, transparent, black), url("/static/portfolio/img/planks.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(transparent), to(black)), url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png");
+  background: linear-gradient(black, transparent, black), url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png");
   height: 100vh;
   position: relative;
 }
@@ -409,7 +409,7 @@ section#tech-stack-section img#programming {
 
 section#projects-section {
   min-height: 100vh;
-  background: url("/static/portfolio/img/puzzle.png");
+  background: url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/puzzle.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -499,7 +499,7 @@ section#projects-section div#projects div.project div.project-content div.projec
 
 section#contact-section {
   height: 100vh;
-  background: url("/static/portfolio/img/desk.png");
+  background: url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/desk.png");
   background-size: cover;
   background-attachment: fixed;
   -o-object-fit: cover;
