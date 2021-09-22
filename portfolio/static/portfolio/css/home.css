@@ -413,6 +413,7 @@ section#projects-section {
   background-attachment: fixed;
   -o-object-fit: cover;
      object-fit: cover;
+  padding-bottom: 3rem;
 }
 
 section#projects-section h2 {

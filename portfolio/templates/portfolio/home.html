@@ -132,9 +132,9 @@
                         </p>
                         <p>
                             <b>Core features:</b> <br>
-                            <span><i class="fas fa-puzzle-piece"></i> User management system - registering, logging, resetting passwords </span> <br>
-                            <span><i class="fas fa-puzzle-piece"></i> Friends system - searching, inviting, filtering, removing </span> <br>
-                            <span><i class="fas fa-puzzle-piece"></i> Creating rooms and real-time chatting based on Ajax requests </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> user management system - registering, logging, resetting passwords </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> friends system - searching, inviting, filtering, removing </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> creating rooms and real-time chatting based on Ajax requests </span> <br>
                         </p>
                         <p>
                             <b>Created with:</b> <br>
@@ -154,8 +154,23 @@
                 <div class="project-content">
                     <img src="{% static '/portfolio/img/image-house.png' %}" alt="" class="project-img">
                     <div class="project-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                        <p>
+                            Image House in a web application containing uploaded images. These can be viewed and rated by all users.
+                        </p>
+                        <p>
+                            <b>Core features:</b> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> user management system - registering, logging, resetting passwords </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> uploading images to AWS S3 Bucket</span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> browsing and voting system </span> <br>
+                        </p>
+                        <p>
+                            <b>Created with:</b> <br>
+                            Django, PostgreSQL, AWS S3 Bucket, Sass, JavaScript
+                        </p>
+                        <p>
+                            <a href="https://github.com/FMularski/image-house" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://image-house.herokuapp.com/" target="_blank" class="btn btn-dark"><i class="fas fa-rocket"></i> Open App</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -166,8 +181,24 @@
                 <div class="project-content">
                     <img src="{% static '/portfolio/img/password-keeper.png' %}" alt="" class="project-img">
                     <div class="project-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                        <p>
+                            Password Keeper is a django web application created to store users' credentials. 
+                            Users can add records of their accounts of any kind and retrieve the credentials at any time.
+                        </p>
+                        <p>
+                            <b>Core features:</b> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> user management system - registering, logging, changing password, changing PIN code </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> adding accounts with secret credentials</span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> editing, deleting, revealing passwords after entering PIN code </span> <br>
+                        </p>
+                        <p>
+                            <b>Created with:</b> <br>
+                            Django, PostgreSQL, NES.css, Sass, jQuery, Ajax
+                        </p>
+                        <p>
+                            <a href="https://github.com/FMularski/passwordkeeper" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://app-password-keeper.herokuapp.com/" target="_blank" class="btn btn-dark"><i class="fas fa-rocket"></i> Open App</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -178,8 +209,21 @@
                 <div class="project-content">
                     <img src="{% static '/portfolio/img/week-manager.png' %}" alt="" class="project-img">
                     <div class="project-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                        <p>Week Manager is a simple django web application created for managing weekly activities.</p>
+                        <p>
+                            <b>Core features:</b> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> displaying activities planned for the current week </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> adding new activities for particular day</span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> editing and removing existing activities </span> <br>
+                        </p>
+                        <p>
+                            <b>Created with:</b> <br>
+                            Django, AWS RDS PostgreSQL, AWS S3 Bucket, jQuery, Ajax
+                        </p>
+                        <p>
+                            <a href="https://github.com/FMularski/django-week-manager" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://w33k-manager.herokuapp.com/" target="_blank" class="btn btn-dark"><i class="fas fa-rocket"></i> Open App</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -192,20 +236,44 @@
                 <div class="project-content">
                     <img src="{% static '/portfolio/img/chatter.png' %}" alt="" class="project-img">
                     <div class="project-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                        <p>Chatter is a simple web app made with flask. It allows users to invite friends and chat in dedicated rooms.</p>
+                        <p>
+                            <b>Core features:</b> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> user management system - registering, logging </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> friends system - adding users to friends list</span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> creating chat rooms and sending messages </span> <br>
+                        </p>
+                        <p>
+                            <b>Created with:</b> <br>
+                            Flask, SQLite, SQL Alchemy, Css, smtplib
+                        </p>
+                        <p>
+                            <a href="https://github.com/FMularski/chatter" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View Code</a>
+                        </p>
                     </div>
                 </div>
             </div>       
             
-            <div class="project hidden">
+            <div class="project hidden-right">
                 <h3 class="project-title">Password Manager</h3>
                 <hr>
                 <div class="project-content">
                     <img src="{% static '/portfolio/img/password-manager.png' %}" alt="" class="project-img">
                     <div class="project-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                        <p>Password Manager is a simple python desktop app made to store various users' credentials.</p>
+                        <p>
+                            <b>Core features:</b> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> user management system - registering, logging, changing password, changing PIN code </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> adding accounts with secret credentials</span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> editing, deleting, revealing passwords after entering PIN code </span> <br>
+                        </p>
+                        <p>
+                            <b>Created with:</b> <br>
+                            Tkinter, SQLite, smtplib
+                        </p>
+                        <p>
+                            <a href="https://github.com/FMularski/PasswordManager" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View Code</a>
+                        </p>
                     </div>
                 </div>
             </div>   
@@ -216,8 +284,19 @@
                 <div class="project-content">
                     <img src="{% static '/portfolio/img/cloudo.png' %}" alt="" class="project-img">
                     <div class="project-desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nesciunt minus, eius quis nostrum magnam error temporibus possimus ipsam, hic odio distinctio eveniet incidunt maxime laboriosam dolore vel accusantium. Voluptatem?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, rem!</p>
+                        <p>Cloudo is a simple weather desktop app fully created with python.</p>
+                        <p>
+                            <b>Core features:</b> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> calling <a href="https://openweathermap.org/api" target="_blank">openweathermap.org API</a> </span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i> displaying weather forecast in the given city</span> <br>
+                        </p>
+                        <p>
+                            <b>Created with:</b> <br>
+                            Tkinter, requests
+                        </p>
+                        <p>
+                            <a href="https://github.com/FMularski/cloudo" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View Code</a>
+                        </p>
                     </div>
                 </div>
             </div>   
