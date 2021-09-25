@@ -456,7 +456,7 @@ section#projects-section div#projects, section#projects-section div#projects-2 {
 
 section#projects-section div#projects div.project, section#projects-section div#projects-2 div.project {
   width: 40rem;
-  margin-bottom: 2rem;
+  margin: 0 2rem 2rem 2rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -498,7 +498,7 @@ section#projects-section div#projects div.project div.project-content div.projec
 }
 
 section#contact-section {
-  height: 100vh;
+  min-height: 100vh;
   background: url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/desk.png");
   background-size: cover;
   background-attachment: fixed;
@@ -574,6 +574,7 @@ section#contact-section a#download-resume div {
   transition: all .3s ease;
   -webkit-transform-origin: center;
           transform-origin: center;
+  margin: 5rem;
 }
 
 section#contact-section a#download-resume div.hidden {
@@ -604,6 +605,7 @@ section#contact-section form {
   font-family: 'Stick No Bills', sans-serif;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin: 5rem;
 }
 
 section#contact-section form.hidden {
@@ -616,8 +618,16 @@ section#contact-section form h2 {
   font-size: 3rem;
 }
 
+section#contact-section form label {
+  font-size: 1.6rem;
+}
+
 section#contact-section form input, section#contact-section form textarea {
   margin-bottom: 1rem;
+}
+
+section#contact-section form textarea {
+  resize: none;
 }
 
 section#contact-section form input:focus, section#contact-section form textarea:focus {
@@ -629,14 +639,15 @@ section#contact-section form input:focus, section#contact-section form textarea:
 section#contact-section form button {
   display: block;
   margin: auto;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   background: #ff0055;
   -webkit-box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
           box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-size: 1.6rem;
 }
 
 section#contact-section form button:hover {

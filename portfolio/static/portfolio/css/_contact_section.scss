@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
 
 section#contact-section {
-    height: 100vh;
+    min-height: 100vh;
     background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/desk.png');
     background-size: cover;
     background-attachment: fixed;
@@ -54,6 +54,7 @@ section#contact-section {
             align-items: center;
             transition: all .3s ease;
             transform-origin: center;
+            margin: 5rem;
 
             &.hidden {
                 opacity: 0;
@@ -82,6 +83,7 @@ section#contact-section {
         width: 35rem;
         font-family: 'Stick No Bills', sans-serif;
         transition: all 0.3s ease;
+        margin: 5rem;
 
         &.hidden {
             opacity: 0;
@@ -92,8 +94,16 @@ section#contact-section {
             font-size: 3rem;
         }
 
+        label {
+            font-size: 1.6rem;
+        }
+
         input, textarea {
             margin-bottom: 1rem;
+        }
+
+        textarea {
+            resize: none;
         }
 
         input:focus, textarea:focus {
@@ -104,12 +114,13 @@ section#contact-section {
         button {
             display: block;
             margin: auto;
-            width: 4rem;
-            height: 4rem;
+            width: 5rem;
+            height: 5rem;
             border-radius: 50%;
             background: rgb(255, 0, 85);
             box-shadow: rgb(187, 0, 62) .25rem .25rem .12rem;
             transition: all 0.3s ease;
+            font-size: 1.6rem;
 
             &:hover {
                 transform: scale(1.1);
