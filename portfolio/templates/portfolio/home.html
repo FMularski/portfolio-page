@@ -1,7 +1,7 @@
 {% extends 'portfolio/base.html' %}
 {% load static %}
 
-{% block title %} {% endblock %}
+{% block title %} Filip Mularski's portfolio {% endblock %}
 
 {% block link %}
     <link rel="stylesheet" href="{% static '/portfolio/css/home.css' %}">
@@ -300,7 +300,29 @@
                         </p>
                     </div>
                 </div>
-            </div>   
+            </div> 
+            <div class="project hidden-right">
+                <h3 class="project-title">Puzzle Game</h3>
+                <hr>
+                <div class="project-content">
+                    <img src="{% static '/portfolio/img/puzzle-game.png' %}" alt="" class="project-img">
+                    <div class="project-desc">
+                        <p>This project is a simple desktop puzzle game. Player can place pieces by entering desired grid coorditionals. </p>
+                        <p>
+                            <b>Core features:</b> <br>
+                            <span><i class="fas fa-puzzle-piece"></i>Placing puzzle pieces</span> <br>
+                            <span><i class="fas fa-puzzle-piece"></i>Removing puzzle pieces from the grid</span> <br>
+                        </p>
+                        <p>
+                            <b>Created with:</b> <br>
+                            PyQt5
+                        </p>
+                        <p>
+                            <a href="https://github.com/FMularski/puzzle-game" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> View Code</a>
+                        </p>
+                    </div>
+                </div>
+            </div>    
         </div>
     </section>
     <section id="contact-section">
@@ -311,12 +333,13 @@
             </div>
         </a>
         <form id="contact-form" class="hidden">
+            {% csrf_token %} 
             <h2>Contact me</h2>
             <label for="">Your email</label>
-            <input type="email" class="form-control">
+            <input id="email" name="email" type="email" class="form-control" required>
             <label for="">Your message</label>
-            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-            <button class="btn btn-danger">Send</button>
+            <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
+            <button id="send-btn" class="btn btn-danger">Send</button>
         </form>
         <div id="social-media">
             <a href="https://github.com/FMularski" target="_blank"><i class="fab fa-github-square"></i></a>
@@ -329,4 +352,5 @@
 {% block script %}
     <script src="{% static '/portfolio/js/anchors.js' %}"></script>
     <script src="{% static '/portfolio/js/animationsOnEntryHandler.js' %}"></script>
+    <script src="{% static '/portfolio/js/contact.js' %}"></script>
 {% endblock %}

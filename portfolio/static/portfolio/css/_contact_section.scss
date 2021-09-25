@@ -15,6 +15,29 @@ section#contact-section {
 
     position: relative;
 
+    div.flash-msg {
+        font-family: 'Stick No Bills', sans-serif;
+        width: 20rem;
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+        color: white;
+        padding: 1rem 3rem 1rem 3rem;
+        border-radius: 2rem;
+        transition: all 0.5s ease;
+        animation: msg-entry 0.5s ease;
+
+        &.success {
+            background: rgba(0, 190, 0, 0.5);
+            box-shadow: rgba(0, 80, 0, 0.5) .5rem .5rem .3rem;
+        }
+
+        &.error {
+            background: rgb(255, 0, 85);
+            box-shadow: rgb(187, 0, 62) .5rem .5rem .25rem;
+        }
+    }
+
     a#download-resume {
         text-decoration: none;
         border-radius: 50%;
@@ -91,7 +114,14 @@ section#contact-section {
             &:hover {
                 transform: scale(1.1);
             }
+
+            i {
+                transition: all 0.5s ease;
+                animation: spin 1s ease infinite;
+                font-size: 1.6rem;
+            }
         }
+
     }
 
     div#social-media {
@@ -121,5 +151,29 @@ section#contact-section {
                 }
             }
         }
+    }
+}
+
+@keyframes msg-entry {
+    from {
+        right: -30%;
+    } to {
+        right: 3rem;
+    }
+}
+
+@keyframes msg-leave {
+    from {
+        right: 3rem;
+    } to {
+        right: -30%;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotateZ(0deg);
+    } to {
+        transform: rotateZ(360deg);
     }
 }
