@@ -7,10 +7,19 @@
 
 body {
   overflow-x: hidden;
-  background: url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png");
-  background-attachment: fixed;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png") no-repeat center center;
   background-size: cover;
-  background-position: center;
 }
 
 section {

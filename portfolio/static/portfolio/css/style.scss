@@ -6,11 +6,27 @@
 
 body {
     overflow-x: hidden;
-    background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    // background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png');
+    // background-attachment: fixed;
+    // background-size: cover;
+    // background-position: center;
 }
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 section {
     width: 100vw;
