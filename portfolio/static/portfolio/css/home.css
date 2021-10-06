@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 section#header-section {
-  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(transparent), to(black)), url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png");
-  background: linear-gradient(black, transparent, black), url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png");
-  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.767)), to(transparent));
+  background: linear-gradient(rgba(0, 0, 0, 0.767), transparent);
+  min-height: 100vh;
   position: relative;
 }
 
@@ -137,7 +141,7 @@ section#header-section i:hover {
 }
 
 section#about-me-section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section#about-me-section div#about {
@@ -161,6 +165,7 @@ section#about-me-section div#about {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-radius: 3rem;
 }
 
 section#about-me-section div#about div#about-left {
@@ -179,8 +184,13 @@ section#about-me-section div#about div#about-left {
           justify-content: center;
 }
 
-section#about-me-section div#about div#about-left img#hey-its-me {
+section#about-me-section div#about div#about-left h2#hey-its-me {
   width: 20rem;
+  display: block;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 3rem;
 }
 
 section#about-me-section div#about div#about-left img#me {
@@ -197,15 +207,28 @@ section#about-me-section div#about div#about-right {
   text-align: justify;
   padding: 3rem;
   min-width: 30rem;
+  font-family: 'Special Elite', cursive;
+}
+
+section#about-me-section div#about div#about-right button {
+  font-family: 'Special Elite', cursive;
 }
 
 section#tech-stack-section {
-  height: 100vh;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 7s ease infinite;
-          animation: gradient 7s ease infinite;
-  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section#tech-stack-section h2 {
@@ -213,19 +236,16 @@ section#tech-stack-section h2 {
   margin: 0;
   font-size: 3rem;
   color: white;
-  font-family: 'Play', sans-serif;
+  font-family: 'Special Elite', cursive;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  text-shadow: black 3px 3px 2px;
 }
 
 section#tech-stack-section h2.hidden {
   -webkit-transform: translateX(-40%);
           transform: translateX(-40%);
   opacity: 0;
-}
-
-section#tech-stack-section table {
-  margin-left: 5vw;
 }
 
 section#tech-stack-section table div.tech {
@@ -247,20 +267,22 @@ section#tech-stack-section table div.tech {
 section#tech-stack-section table div.tech img {
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0.4rem 0.4rem;
-          box-shadow: rgba(0, 0, 0, 0.5) 0.4rem 0.4rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 1rem 1rem 0.8rem;
+          box-shadow: rgba(0, 0, 0, 0.8) 1rem 1rem 0.8rem;
   opacity: 1;
 }
 
 section#tech-stack-section table div.tech span.tech-desc {
+  font-family: 'Special Elite', cursive;
+  text-shadow: black 3px 3px 2px;
   color: white;
-  margin: .5rem;
-  font-style: italic;
+  margin: 1rem;
   width: 100%;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 section#tech-stack-section span.animated-code {
@@ -409,17 +431,11 @@ section#tech-stack-section img#programming {
 
 section#projects-section {
   min-height: 100vh;
-  background: url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/puzzle.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  -o-object-fit: cover;
-     object-fit: cover;
   padding-bottom: 3rem;
 }
 
 section#projects-section h2 {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Special Elite', cursive;
   padding: 3% 5vw 3% 5vw;
   color: white;
   text-shadow: black 2px 2px 1px;
@@ -427,10 +443,13 @@ section#projects-section h2 {
   text-align: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  margin-top: 5rem;
 }
 
 section#projects-section h2 img {
-  height: 3rem;
+  height: 4rem;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
 }
 
 section#projects-section h2.hidden {
@@ -440,7 +459,7 @@ section#projects-section h2.hidden {
 }
 
 section#projects-section div#projects, section#projects-section div#projects-2 {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Special Elite', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,6 +495,9 @@ section#projects-section div#projects div.project.hidden-right, section#projects
 section#projects-section div#projects div.project h3.project-title, section#projects-section div#projects-2 div.project h3.project-title {
   color: white;
   text-shadow: black 2px 2px 1px;
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  font-size: 2rem;
 }
 
 section#projects-section div#projects div.project div.project-content, section#projects-section div#projects-2 div.project div.project-content {
@@ -499,11 +521,8 @@ section#projects-section div#projects div.project div.project-content div.projec
 
 section#contact-section {
   min-height: 100vh;
-  background: url("https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/desk.png");
-  background-size: cover;
-  background-attachment: fixed;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,7 +538,7 @@ section#contact-section {
 }
 
 section#contact-section div.flash-msg {
-  font-family: 'Stick No Bills', sans-serif;
+  font-family: 'Special Elite', cursive;
   width: 20rem;
   position: absolute;
   right: 3rem;
@@ -553,10 +572,10 @@ section#contact-section a#download-resume {
 section#contact-section a#download-resume div {
   width: 18rem;
   height: 18rem;
-  background: #ff0055;
+  background: white;
   border-radius: 50%;
-  -webkit-box-shadow: #bb003e 0.5rem 0.5rem 0.25rem;
-          box-shadow: #bb003e 0.5rem 0.5rem 0.25rem;
+  -webkit-box-shadow: black 1rem 1rem .8rem;
+          box-shadow: black 1rem 1rem .8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,15 +603,15 @@ section#contact-section a#download-resume div.hidden {
 }
 
 section#contact-section a#download-resume div span {
-  font-family: 'Stick No Bills', sans-serif;
+  font-family: 'Special Elite', cursive;
   font-size: 2rem;
-  color: white;
+  color: black;
 }
 
 section#contact-section a#download-resume div i {
   padding: 1rem;
   font-size: 4rem;
-  color: white;
+  color: black;
 }
 
 section#contact-section a#download-resume div:hover {
@@ -602,10 +621,12 @@ section#contact-section a#download-resume div:hover {
 
 section#contact-section form {
   width: 35rem;
-  font-family: 'Stick No Bills', sans-serif;
+  font-family: 'Special Elite', cursive;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin: 5rem;
+  color: white;
+  text-shadow: black 3px 3px 2px;
 }
 
 section#contact-section form.hidden {
@@ -631,9 +652,9 @@ section#contact-section form textarea {
 }
 
 section#contact-section form input:focus, section#contact-section form textarea:focus {
-  border-color: #bb003e;
-  -webkit-box-shadow: #bb003e 0.25rem 0.25rem 0.25rem;
-          box-shadow: #bb003e 0.25rem 0.25rem 0.25rem;
+  border-color: black;
+  -webkit-box-shadow: black 0.25rem 0.25rem 0.25rem;
+          box-shadow: black 0.25rem 0.25rem 0.25rem;
 }
 
 section#contact-section form button {
@@ -642,9 +663,10 @@ section#contact-section form button {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background: #ff0055;
-  -webkit-box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
-          box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
+  background: white;
+  -webkit-box-shadow: black .7rem .7rem .6rem;
+          box-shadow: black .7rem .7rem .6rem;
+  color: black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-size: 1.6rem;
@@ -684,15 +706,15 @@ section#contact-section div#social-media {
 section#contact-section div#social-media a {
   text-decoration: none;
   font-size: 1.8rem;
-  color: white;
+  color: black;
 }
 
 section#contact-section div#social-media a i {
   padding: 1.2rem;
-  background: #ff0055;
+  background: white;
   border-radius: 50%;
-  -webkit-box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
-          box-shadow: #bb003e 0.25rem 0.25rem 0.12rem;
+  -webkit-box-shadow: black .5rem .5rem .4rem;
+          box-shadow: black .5rem .5rem .4rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

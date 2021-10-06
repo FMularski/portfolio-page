@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 section#header-section {
-    background: linear-gradient(black, transparent, black),
-    url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png');
-    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), transparent);
+    // background: linear-gradient(black, transparent, black),
+    // url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png');
+    min-height: 100vh;
     position: relative;
 
     p {
@@ -12,6 +13,7 @@ section#header-section {
         font-family: 'Special Elite', cursive;
         text-align: center;
         margin: 0;
+        // text-shadow: black 3px 3px 2px;
     }
 
     div#line {

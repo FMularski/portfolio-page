@@ -2,20 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 section#tech-stack-section {
-    height: 100vh;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
-    position: relative;
+    min-height: 100vh;
+    // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    // background-size: 400% 400%;
+    // animation: gradient 7s ease infinite;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     h2 {
         padding: 3% 5vw 3% 5vw;
         margin: 0;
         font-size: 3rem;
         color: white;
-        font-family: 'Play', sans-serif;
+        // font-family: 'Play', sans-serif;
+        font-family: 'Special Elite', cursive;
         transition: all 0.5s ease;
+        text-shadow: black 3px 3px 2px;
 
         &.hidden {
             transform: translateX(-40%);
@@ -24,7 +32,7 @@ section#tech-stack-section {
     }
 
     table {
-        margin-left: 5vw;
+        // margin-left: 5vw;
 
         div.tech {
             display: flex;
@@ -34,19 +42,22 @@ section#tech-stack-section {
             
             img {
                 transition: all 0.8s ease;
-                width: 8rem;
-                height: 8rem;
+                width: 10rem;
+                height: 10rem;
                 border-radius: 50%;
-                box-shadow: rgba(0, 0, 0, .5) .4rem .4rem;
+                box-shadow: rgba(0, 0, 0, .8) 1rem 1rem .8rem;
                 opacity: 1;
             }
 
             span.tech-desc {
+                font-family: 'Special Elite', cursive;
+                text-shadow: black 3px 3px 2px;
                 color: white;
-                margin: .5rem;
-                font-style: italic;
+                margin: 1rem;
+                // font-style: italic;
                 width: 100%;
                 text-align: center;
+                font-size: 1.2rem;
             }
         }
     }

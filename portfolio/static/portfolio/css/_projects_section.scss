@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 section#projects-section {
     min-height: 100vh;
-    background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/puzzle.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    object-fit: cover;
+    // background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/puzzle.png');
+    // background-size: cover;
+    // background-position: center;
+    // background-attachment: fixed;
+    // object-fit: cover;
     padding-bottom: 3rem;
 
     h2 {
-        font-family: 'Comfortaa', cursive;
+        // font-family: 'Comfortaa', cursive;
+        font-family: 'Special Elite', cursive;
         padding: 3% 5vw 3% 5vw;
         color: white;
         text-shadow: black 2px 2px 1px;
         font-size: 3rem;
         text-align: center;
         transition: all 0.5s ease;
+        margin-top: 5rem;
 
         img {
-            height: 3rem;
+            height: 4rem;
+            margin-left: -.5rem;
+            margin-right: -.5rem;
         }
 
         &.hidden {
@@ -29,7 +35,8 @@ section#projects-section {
     }
 
     div#projects, div#projects-2 {
-        font-family: 'Comfortaa', cursive;
+        // font-family: 'Comfortaa', cursive;
+        font-family: 'Special Elite', cursive;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -53,6 +60,9 @@ section#projects-section {
             h3.project-title {
                 color: white;
                 text-shadow: black 2px 2px 1px;
+                font-family: 'Special Elite', cursive;
+                text-align: center;
+                font-size: 2rem;
             }
             
             div.project-content {

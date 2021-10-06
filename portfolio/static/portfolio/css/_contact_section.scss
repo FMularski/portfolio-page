@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 section#contact-section {
     min-height: 100vh;
-    background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/desk.png');
-    background-size: cover;
-    background-attachment: fixed;
-    object-fit: cover;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    // background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/desk.png');
+    // background-size: cover;
+    // background-attachment: fixed;
+    // object-fit: cover;
 
     display: flex;
     justify-content: space-evenly;
@@ -16,7 +20,8 @@ section#contact-section {
     position: relative;
 
     div.flash-msg {
-        font-family: 'Stick No Bills', sans-serif;
+        // font-family: 'Stick No Bills', sans-serif;
+        font-family: 'Special Elite', cursive;
         width: 20rem;
         position: absolute;
         right: 3rem;
@@ -45,9 +50,10 @@ section#contact-section {
         div {
             width: 18rem;
             height: 18rem;
-            background: rgb(255, 0, 85);
+            // background: rgb(255, 0, 85);
+            background: white;
             border-radius: 50%;
-            box-shadow: rgb(187, 0, 62) .5rem .5rem .25rem;
+            box-shadow: black 1rem 1rem .8rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -62,15 +68,16 @@ section#contact-section {
             }
 
             span {
-                font-family: 'Stick No Bills', sans-serif;
+                // font-family: 'Stick No Bills', sans-serif;
+                font-family: 'Special Elite', cursive;
                 font-size: 2rem;
-                color: white;
+                color: black;
             }
 
             i {
                 padding: 1rem;
                 font-size: 4rem;
-                color: white;
+                color: black;
             }
 
             &:hover {
@@ -81,9 +88,12 @@ section#contact-section {
 
     form {
         width: 35rem;
-        font-family: 'Stick No Bills', sans-serif;
+        // font-family: 'Stick No Bills', sans-serif;
+        font-family: 'Special Elite', cursive;
         transition: all 0.3s ease;
         margin: 5rem;
+        color: white;
+        text-shadow: black 3px 3px 2px;
 
         &.hidden {
             opacity: 0;
@@ -107,8 +117,10 @@ section#contact-section {
         }
 
         input:focus, textarea:focus {
-            border-color: rgb(187, 0, 62);
-            box-shadow: rgb(187, 0, 62) 0.25rem 0.25rem 0.25rem; 
+            // border-color: rgb(187, 0, 62);
+            // box-shadow: rgb(187, 0, 62) 0.25rem 0.25rem 0.25rem; 
+            border-color: black;
+            box-shadow: black 0.25rem 0.25rem 0.25rem; 
         }
 
         button {
@@ -117,8 +129,12 @@ section#contact-section {
             width: 5rem;
             height: 5rem;
             border-radius: 50%;
-            background: rgb(255, 0, 85);
-            box-shadow: rgb(187, 0, 62) .25rem .25rem .12rem;
+            background: white;
+            box-shadow: black .7rem .7rem .6rem;
+            color: black;
+
+            // background: rgb(255, 0, 85);
+            // box-shadow: rgb(187, 0, 62) .25rem .25rem .12rem;
             transition: all 0.3s ease;
             font-size: 1.6rem;
 
@@ -148,13 +164,15 @@ section#contact-section {
         a {
             text-decoration: none;
             font-size: 1.8rem;
-            color: white;
+            color: black;
 
             i {
                 padding: 1.2rem;
-                background: rgb(255, 0, 85);
+                // background: rgb(255, 0, 85);
+                background: white;
                 border-radius: 50%;
-                box-shadow: rgb(187, 0, 62) .25rem .25rem .12rem;
+                box-shadow: black .5rem .5rem .4rem;
+                // box-shadow: rgb(187, 0, 62) .25rem .25rem .12rem;
                 transition: all 0.3s ease;
 
                 &:hover {

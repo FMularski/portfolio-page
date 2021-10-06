@@ -20,7 +20,8 @@
     <section id="about-me-section" class="flex-center">
         <div id="about">
             <div id="about-left">
-                <img id="hey-its-me" src="{% static '/portfolio/img/heyitsme.png' %} " alt="">
+                <!-- <img id="hey-its-me" src="{% static '/portfolio/img/heyitsme.png' %} " alt=""> -->
+                <h2 id="hey-its-me">Hey, it's me!</h2>
                 <img id="me" src="{% static '/portfolio/img/me.png' %}" alt="">
             </div>
             <div id="about-right">
@@ -32,7 +33,7 @@
                     always loved to experiment.
                 </p>
                 <p>
-                    I have been <b>studying IT</b> in The State University of Applied Sciences in Elbląg. During that time I've learnt
+                    I have been <b>studying IT</b> in The State University of Applied Sciences in Elblag. During that time I've learnt
                     a lot and I have been always trying to use that knowledge in my hobby projects. After I gained more experience
                     I decided that creating <b>web applications</b> is what I was willing to do professionally. Because of the fact 
                     I felt confident in writing <b>python</b> code, I decided to pick <b>django</b> as my main backend framework. 
@@ -111,16 +112,16 @@
                 <td></td>
             </tr>
         </table>
-        <img id="programming" src="{% static '/portfolio/img/programming.svg' %}" alt="">
+        <!-- <img id="programming" src="{% static '/portfolio/img/programming.svg' %}" alt="">
         <span class="animated-code animated-code-1">print('Hello world')</span>
         <span class="animated-code animated-code-2">for x in mylist: print(x)</span>
         <span class="animated-code animated-code-3">fun = lambda x: x % 2</span>
         <span class="animated-code animated-code-4">v1, v2 = v2, v1</span>
-        <span class="animated-code animated-code-5">py manage.py migrate</span>
+        <span class="animated-code animated-code-5">py manage.py migrate</span> -->
         
     </section>
     <section id="projects-section">
-        <h2 id="projects-header" class="hidden"><i class="fas fa-puzzle-piece"></i> My <img src="{% static '/portfolio/img/django.svg' %}" alt=""> projects</h2>
+        <h2 id="projects-header" class="hidden"><i class="fas fa-puzzle-piece"></i> My <img id="django-logo" src="{% static '/portfolio/img/django-logo.png' %}" alt=""> projects</h2>
         <div id="projects">
             <div class="project hidden">
                 <h3 class="project-title">Real-time chat app</h3>
@@ -339,7 +340,7 @@
             <input id="email" name="email" type="email" class="form-control" required>
             <label for="">Your message</label>
             <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
-            <button id="send-btn" class="btn btn-danger">Send</button>
+            <button id="send-btn" class="btn btn-light">Send</button>
         </form>
         <div id="social-media">
             <a href="https://github.com/FMularski" target="_blank"><i class="fab fa-github-square"></i></a>

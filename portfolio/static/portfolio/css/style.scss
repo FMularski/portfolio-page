@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    background: url('https://images.pexels.com/photos/55766/pexels-photo-55766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background: url('https://mularskif-portfolio.s3.eu-central-1.amazonaws.com/portfolio/img/planks.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -20,6 +20,20 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-dark {
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 90%; 
+    }
 }
 
 @media screen and (max-width: 1400px) {
