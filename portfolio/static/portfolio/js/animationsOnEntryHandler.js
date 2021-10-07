@@ -42,9 +42,14 @@
         observer.observe(img);
     }
 
-    techImages.forEach(img => {
-        setObserver(img);
-    });
+    // alllow spin animation only above particular width
+    const deviceScreenWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
+
+    if (deviceScreenWidth > 1200) {
+        techImages.forEach(img => {
+            setObserver(img);
+        });
+    }
 
 
     const fadingInElements = [
