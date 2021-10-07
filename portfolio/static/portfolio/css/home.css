@@ -429,6 +429,15 @@ section#tech-stack-section img#programming {
   }
 }
 
+@media screen and (max-width: 800px) {
+  table div.tech img {
+    width: 7rem;
+  }
+  table span.tech-desc {
+    display: none;
+  }
+}
+
 section#projects-section {
   min-height: 100vh;
   padding-bottom: 3rem;
